@@ -1,0 +1,58 @@
+@import "../css-config/mixins.scss";
+
+.banner-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1rem;
+  padding: 1rem auto;
+  background-color: black;
+  color: white;
+  outline: 3px dotted white;
+  .banner-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    .banner {
+      flex: 0 0 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      height: 7rem;
+      h3 {
+        text-decoration: underline;
+      }
+      @include md {
+        flex-direction: row;
+        height: 3rem;
+        gap: 2rem;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        p {
+          font-weight: 600;
+        }
+        button {
+          background-color: dodgerblue;
+          color: white;
+          padding: 6px 10px;
+          border-radius: 5px;
+          font-weight: 600;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.light-b {
+  background-color: #ffffff;
+  color: black;
+  outline: 3px dashed black;
+}

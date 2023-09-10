@@ -1,0 +1,30 @@
+@import "../css-config/mixins.scss";
+
+.sec-container {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: grey;
+  .section {
+    @include md {
+      padding: 10px auto;
+    }
+    .sec-box {
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      h1 {
+        text-decoration: underline;
+        color: #faad14;
+        text-transform: uppercase;
+      }
+    }
+    .card {
+      background: black;
+    }
+  }
+}
